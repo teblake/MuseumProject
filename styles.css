@@ -1,0 +1,14 @@
+/* Polished Museum Browser Styles */
+:root{--bg:#f5f7fa;--card:#ffffff;--accent:#355f8c;--text:#1f2933;--muted:#6b7280;--border:#e5e7eb;--shadow:0 6px 18px rgba(0,0,0,.08)}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text)}
+header{padding:2rem 1.5rem 1rem;max-width:1000px;margin:auto}
+h1{margin:0;font-size:2.3rem}
+.subtitle{color:var(--muted)}
+main{max-width:1000px;margin:auto;padding:0 1.5rem 3rem}
+label{display:block;margin-top:1rem;margin-bottom:.25rem;font-weight:600}
+select{padding:.6rem .75rem;font-size:1rem;border-radius:6px;border:1px solid var(--border);max-width:320px}
+#museumContainer{margin-top:2rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.25rem}
+.museum-card{background:var(--card);padding:1.25rem;border-radius:10px;box-shadow:var(--shadow);border-top:6px solid var(--accent)}
+.museum-card h3{margin:.25rem 0}
+.museum-card .city{color:var(--muted);font-size:.9rem}
