@@ -34,6 +34,56 @@ const museums={
     {"name":"Tokyo National Museum","city":"Tokyo"},
     {"name":"National Museum of Modern Art","city":"Tokyo"},
     {"name":"Kyoto National Museum","city":"Kyoto"}
+  ],
+  "Spain":[
+    {"name":"Museo Nacional del Prado","city":"Madrid"},
+    {"name":"Museo Reina Sofia","city":"Madrid"},
+    {"name":"Guggenheim Museum Bilbao","city":"Bilbao"}
+  ],
+  "Germany":[
+    {"name":"Pergamon Museum","city":"Berlin"},
+    {"name":"Alte Pinakothek","city":"Munich"},
+    {"name":"Stadel Museum","city":"Frankfurt"}
+  ],
+  "Netherlands":[
+    {"name":"Rijksmuseum","city":"Amsterdam"},
+    {"name":"Van Gogh Museum","city":"Amsterdam"},
+    {"name":"Mauritshuis","city":"The Hague"}
+  ],
+  "Greece":[
+    {"name":"Acropolis Museum","city":"Athens"},
+    {"name":"National Archaeological Museum","city":"Athens"},
+    {"name":"Museum of Byzantine Culture","city":"Thessaloniki"}
+  ],
+  "China":[
+    {"name":"Palace Museum","city":"Beijing"},
+    {"name":"Shanghai Museum","city":"Shanghai"},
+    {"name":"National Museum of China","city":"Beijing"}
+  ],
+  "India":[
+    {"name":"Indian Museum","city":"Kolkata"},
+    {"name":"National Museum","city":"New Delhi"},
+    {"name":"Chhatrapati Shivaji Maharaj Vastu Sangrahalaya","city":"Mumbai"}
+  ],
+  "Brazil":[
+    {"name":"Sao Paulo Museum of Art","city":"Sao Paulo"},
+    {"name":"Museum of Tomorrow","city":"Rio de Janeiro"},
+    {"name":"Oscar Niemeyer Museum","city":"Curitiba"}
+  ],
+  "Canada":[
+    {"name":"Royal Ontario Museum","city":"Toronto"},
+    {"name":"National Gallery of Canada","city":"Ottawa"},
+    {"name":"Montreal Museum of Fine Arts","city":"Montreal"}
+  ],
+  "Australia":[
+    {"name":"National Gallery of Victoria","city":"Melbourne"},
+    {"name":"Australian Museum","city":"Sydney"},
+    {"name":"National Museum of Australia","city":"Canberra"}
+  ],
+  "South Africa":[
+    {"name":"Zeitz Museum of Contemporary Art Africa","city":"Cape Town"},
+    {"name":"Iziko South African Museum","city":"Cape Town"},
+    {"name":"Apartheid Museum","city":"Johannesburg"}
   ]
 };
 const select=document.getElementById('countrySelect');
