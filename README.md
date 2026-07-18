@@ -1,3 +1,3 @@
 World Museum Browser
 Open index.html in a browser.
-Now includes Egypt, Mexico, and Japan.
+Includes Egypt, Mexico, France, US, UK, and Japan.
