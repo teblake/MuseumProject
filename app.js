@@ -93,8 +93,15 @@ const museums = {
 
 const select = document.getElementById("countrySelect");
 const container = document.getElementById("museumContainer");
+const resultsSummary = document.getElementById("resultsSummary");
+const countryCount = document.getElementById("countryCount");
+const museumCount = document.getElementById("museumCount");
 
 const countryList = Object.keys(museums).sort();
+const totalMuseums = countryList.reduce((total, country) => total + museums[country].length, 0);
+
+countryCount.textContent = `${countryList.length} countries`;
+museumCount.textContent = `${totalMuseums} museums`;
 
 const placeholderOption = document.createElement("option");
 placeholderOption.value = "";
@@ -113,6 +120,9 @@ countryList.forEach(country => {
 function render() {
   container.innerHTML = "";
   const items = museums[select.value] || [];
+  resultsSummary.textContent = items.length
+    ? `${items.length} museums`
+    : "No country selected";
 
   if (items.length === 0) {
     const message = document.createElement("p");

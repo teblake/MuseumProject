@@ -7,12 +7,29 @@
 </head>
 <body>
 <header>
-<h1>🌍 World Museums</h1>
-<p class="subtitle">Browse major museums by country</p>
+<nav class="topbar" aria-label="Museum overview">
+<span class="brand">World Museum Browser</span>
+<div class="collection-stats">
+<span id="countryCount"></span>
+<span id="museumCount"></span>
+<span>Curated highlights</span>
+</div>
+</nav>
+<section class="hero">
+<p class="eyebrow">Global collection guide</p>
+<h1>World Museums</h1>
+<p class="subtitle">Browse major museums by country and discover signature objects, galleries, and cultural landmarks.</p>
+</section>
 </header>
 <main>
-<label for="countrySelect">Select a country</label>
+<section class="search-panel" aria-labelledby="countryLabel">
+<div>
+<label id="countryLabel" for="countrySelect">Select a country</label>
+<p class="helper-text">Explore a curated set of major museums and highlights.</p>
+</div>
 <select id="countrySelect"></select>
+<p id="resultsSummary" class="results-summary" aria-live="polite"></p>
+</section>
 <section id="museumContainer"></section>
 </main>
 <script src="app.js"></script>
