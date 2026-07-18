@@ -15,3 +15,4 @@ select{padding:.6rem .75rem;font-size:1rem;border-radius:6px;border:1px solid va
 .museum-type{display:inline-block;margin-top:.75rem;padding:.2rem .5rem;border-radius:999px;background:#eef4fb;color:var(--accent);font-size:.8rem;font-weight:700}
 .highlight{margin:.9rem 0 .45rem;font-weight:700}
 .description{margin:0;color:#4b5563;line-height:1.45;font-size:.95rem}
+.empty-state{margin:0;padding:2rem 1rem;border:1px dashed var(--border);border-radius:10px;color:var(--muted);background:#ffffff;text-align:center}

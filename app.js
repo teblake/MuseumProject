@@ -94,7 +94,16 @@ const museums = {
 const select = document.getElementById("countrySelect");
 const container = document.getElementById("museumContainer");
 
-Object.keys(museums).forEach(country => {
+const countryList = Object.keys(museums).sort();
+
+const placeholderOption = document.createElement("option");
+placeholderOption.value = "";
+placeholderOption.textContent = "Choose a country";
+placeholderOption.disabled = true;
+placeholderOption.selected = true;
+select.appendChild(placeholderOption);
+
+countryList.forEach(country => {
   const option = document.createElement("option");
   option.value = country;
   option.textContent = country;
@@ -103,8 +112,19 @@ Object.keys(museums).forEach(country => {
 
 function render() {
   container.innerHTML = "";
+  const items = museums[select.value] || [];
 
-  museums[select.value].forEach(item => {
+  if (items.length === 0) {
+    const message = document.createElement("p");
+    message.className = "empty-state";
+    message.textContent = select.value
+      ? "No museums available for this selection."
+      : "Please choose a country from the dropdown.";
+    container.appendChild(message);
+    return;
+  }
+
+  items.forEach(item => {
     const card = document.createElement("div");
     const title = document.createElement("h3");
     const location = document.createElement("div");
@@ -129,6 +149,5 @@ function render() {
   });
 }
 
-select.onchange = render;
-select.selectedIndex = 0;
+select.addEventListener("change", render);
 render();
